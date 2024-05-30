@@ -231,7 +231,7 @@ const MintNFT = ({ enabled, onMint, setImageURL }) => {
 
 	return (
 		<div className='flex flex-col items-center'>
-			<p className="font-bold text-base mt-4 text-green">Step 2: Mint</p>
+			<p className="font-bold text-base mt-4 text-green">Step 2: Mint your NFT</p>
 			<UIButton
 				text={config.mintButtonText}
 				loading={isLoading}

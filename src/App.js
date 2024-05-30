@@ -21,7 +21,7 @@ function App() {
 				</div>
 				<div className="bg-white-top w-full bg-no-repeat" style={{height: '11vh'}}></div>
 
-				<div className="flex-grow bg-main-content-bg p-12">
+				<div className="flex-grow bg-main-content-bg pt-12">
 					{(!isMobile || forceDesktop === 'true') ? <Home isAndroid={isAndroid}/> :
 						<HomeMobile />}
 				</div>

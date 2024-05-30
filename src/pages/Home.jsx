@@ -5,6 +5,9 @@ import { PopupContext } from "../providers/PopupContextProvider";
 import { Web3ModalProvider } from "../providers/Web3Modal";
 import { useDisconnect } from "@web3modal/ethers/react";
 import config from "../config";
+import Eligibility from "../components/Eligibility";
+import NFTLevels from "../components/NFTLevels";
+import FuturePhases from "../components/FuturePhases";
 
 export default function Home({isAndroid}) {
 	const [isWalletConnected, setIsWalletConnected] = useState(false);
@@ -26,7 +29,7 @@ export default function Home({isAndroid}) {
 
 	return (
 		<Web3ModalProvider>
-			<div className="flex flex-col gap-4 text-center items-stretch w-74 mx-auto">
+			<div className="flex flex-col gap-4 text-center items-stretch w-74 mx-auto" style={{marginBottom: "100px"}}>
 
 				{imageURL && (
 					<div className="flex flex-col gap-4">
@@ -46,6 +49,12 @@ export default function Home({isAndroid}) {
 						<span className="text-sm">Please close Metamask app after minting</span>
 					</div>
 				)}
+			</div>
+
+			<div className="text-sm">
+				<Eligibility />
+				<NFTLevels />
+				<FuturePhases />
 			</div>
 		</Web3ModalProvider>
 	);

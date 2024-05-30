@@ -36,10 +36,13 @@ module.exports = {
 				base: ['18px', '24px'],
 				lg: ['18px', '28px'],
 				xl: ['24px', '32px'],
+				title: ['32px', '40px'],
 			},
 			spacing: {
 				'navbar': '3.2rem',
-				'button': '200px'
+				'button': '200px',
+				'section': '4rem',
+				'section-bottom': '135px',
 			},
 			width: {
 				'nft-image': '230px',
