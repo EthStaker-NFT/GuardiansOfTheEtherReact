@@ -9,7 +9,7 @@ export default function HomeMobile({id}) {
 	const [showSecondModal, setShowSecondModal] = useState(false);
 
 	return (
-		<div className="flex flex-col items-center justify-center p-4 mt-8 text-white">
+		<div className="flex flex-col items-center justify-center p-4 mb-14 text-white">
 			{!showFirstModal && !showSecondModal && (
 				<UIButton
 					text={config.mintButtonText}

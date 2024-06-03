@@ -18,8 +18,12 @@ export default function SimpleModal({ open, children, onClose = () => { } }) {
 			onClick={closeModal}
 		>
 			<div className="relative px-4 w-full max-w-2xl max-h-full">
-				<div className="relative rounded-3xl shadow bg-black">
-					<div className="px-6 py-12 md:p-5 space-y-4">
+				<div className="relative shadow">
+					<div className="px-6 py-12 md:p-5 space-y-4 bg-black" style={{
+						borderColor: "#ade440",
+						borderWidth: "1px",
+						borderRadius: "20px",
+					}}>
 						{children}
 					</div>
 				</div>
