@@ -4,6 +4,9 @@ import { BrowserView, MobileView, isBrowser, isMobile, isAndroid } from 'react-d
 import HomeMobile from "./pages/HomeMobile";
 import {useState} from "react";
 import Navbar from "./components/Navbar";
+import Eligibility from "./components/Eligibility";
+import NFTLevels from "./components/NFTLevels";
+import FuturePhases from "./components/FuturePhases";
 
 function App() {
 	// get query params	
@@ -14,7 +17,7 @@ function App() {
 	return (
 		<PopupContextProvider>
 			<div className="bg-stars min-h-screen text-center flex flex-col font-sans">
-				<Navbar />
+				<Navbar/>
 				<div className="w-full pt-24" style={{paddingTop: '8rem'}}>
 					<h1 className="text-4xl font-bold text-white">Claim NFT</h1>
 					<p className="text-lg text-white mt-2">For operating your own Ethereum staking node</p>
@@ -23,9 +26,13 @@ function App() {
 
 				<div className="flex-grow bg-main-content-bg pt-12">
 					{(!isMobile || forceDesktop === 'true') ? <Home isAndroid={isAndroid}/> :
-						<HomeMobile />}
+						<HomeMobile/>}
 				</div>
-
+				<div className="text-sm">
+					<Eligibility/>
+					<NFTLevels/>
+					<FuturePhases/>
+				</div>
 			</div>
 		</PopupContextProvider>
 	);

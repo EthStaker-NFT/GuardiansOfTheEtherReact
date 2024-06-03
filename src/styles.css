@@ -1,0 +1,17 @@
+.custom-bullet-list {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-bullet-list li {
+    position: relative;
+    padding-left: 20px;
+    text-indent: 0px;
+}
+
+.custom-bullet-list li:before {
+    content: "\2022"; /* Unicode for bullet point */
+    position: absolute;
+    left: 0;
+    top: 0;
+}

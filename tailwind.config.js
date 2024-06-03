@@ -6,7 +6,6 @@ module.exports = {
 		extend: {
 			backgroundImage: {
 				'stars': "url('/src/assets/images/background.png'), linear-gradient(360deg, rgba(124, 177, 20, .16), rgba(0, 0, 0, .14) 82%), linear-gradient(#000, #000)",
-				'white-top': "url('/src/assets/images/white-top.svg')",
 			},
 			backgroundSize: {
 				'stars': '518px auto',
@@ -26,10 +25,12 @@ module.exports = {
 				'teal': "#07e3a1",
 				'green': '#6fa010',
 				'link-green': '#70a011',
+				"link-lower": '#ade440',
 				'grey': '#ddd',
 				'button-green': '#ade43f',
 				'button-disabled': 'rgba(173, 228, 63, 0.4)',
 				'error-red': '#c30054',
+				'grey-on-white': '#596273',
 			},
 			fontSize: {
 				sm: ['14px', '20px'],

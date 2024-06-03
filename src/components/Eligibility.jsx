@@ -10,10 +10,10 @@ const Eligibility = () => {
 					<li>September 15, 2022 (day of the merge)</li>
 					<li>September 15, 2023</li>
 				</ul>
-				<p style={{ marginBottom: "16px" }}>You can check your address against <a href="https://your-list-url.com" target="_blank" rel="noreferrer noopener" className="text-link-green underline">this list</a>, maintained by <a href="https://twitter.com/GLCstaked" target="_blank" rel="noreferrer noopener" className="text-link-green underline">GLCStaked</a> and the <a href="https://stakecat.space/" target="_blank" rel="noreferrer noopener" className="text-link-green underline">StakeCat</a> team.</p>
-				<p style={{ marginBottom: "16px" }}><span className="font-bold">Staker:</span> search for your deposit address<br />
-				<span className="font-bold">RocketPool</span> Node Operator: use your withdrawal address</p>
-				<p>If you believe your address should be listed, but isn’t, you can reach out to us in the <a target="_blank" rel="noreferrer noopener" href="https://discord.com" className="text-link-green underline">EthStaker discord server</a>.</p>
+				<p style={{ marginBottom: "16px" }}>You can check your address against <a href="" target="_blank" rel="noreferrer noopener" className="text-link-lower underline font-bold">this list</a>, maintained by <a href="https://twitter.com/GLCstaked" target="_blank" rel="noreferrer noopener" className="text-link-lower underline">GLCStaked</a> and the <a href="https://stakecat.space/" target="_blank" rel="noreferrer noopener" className="text-link-lower underline">StakeCat</a> team.</p>
+				<p style={{ marginBottom: "16px" }}><span className="font-bold">Solo Staker</span>: search for your deposit address<br />
+				<span className="font-bold">RocketPool Node Operator</span>: use your withdrawal address</p>
+				<p>If you believe your address should be listed, but isn’t, you can reach out to us in the <a target="_blank" rel="noreferrer noopener" href="https://discord.com/channels/694822223575384095" className="text-link-lower underline">EthStaker discord server</a>.</p>
 			</div>
 		</div>
 	);

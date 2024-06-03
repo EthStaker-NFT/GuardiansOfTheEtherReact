@@ -50,12 +50,6 @@ export default function Home({isAndroid}) {
 					</div>
 				)}
 			</div>
-
-			<div className="text-sm">
-				<Eligibility />
-				<NFTLevels />
-				<FuturePhases />
-			</div>
 		</Web3ModalProvider>
 	);
 }
