@@ -20,7 +20,10 @@ export default function UIButton({ text, loading, checked, enabled, onClick }) {
 	return (
 		<div
 			className={buttonClassNames}
-			style={{width: '230px'}}
+			style={{
+				width: '230px',
+				userSelect: 'none'
+			}}
 			onClick={clickHandler}
 		>
 			{checked && <img src={checkIcon} alt="check" width="18" height="18" className='absolute left-6' style={{ top: '50%', transform: 'translateY(-50%)' }} />}
