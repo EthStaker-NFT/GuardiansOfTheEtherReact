@@ -16,3 +16,11 @@
     left: 0;
     top: 0;
 }
+
+@media (hover: hover) {
+    .uiButton:hover {
+        background-color: black;
+        color: white;
+        transform: translateY(-0.25rem);
+    }
+}

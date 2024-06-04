@@ -1,6 +1,8 @@
 import React from 'react';
 import checkIcon from '../../assets/icons/check.png';
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import '../../styles.css';
+
 
 export default function UIButton({ text, loading, checked, enabled, onClick }) {
 
@@ -10,9 +12,9 @@ export default function UIButton({ text, loading, checked, enabled, onClick }) {
 		}
 	}
 
-	const buttonClassNames = `rounded-full px-6 py-2 mt-4 shadow-button ${
+	const buttonClassNames = ` uiButton rounded-full px-6 py-2 mt-4 shadow-button ${
 		enabled
-			? 'cursor-pointer bg-button-green text-black transition duration-300 ease-in-out transform hover:-translate-y-1 hover:bg-black hover:text-white'
+			? 'cursor-pointer bg-button-green text-black transition duration-300 ease-in-out transform'
 			: 'cursor-not-allowed bg-button-disabled text-black'
 	}`;
 
