@@ -2,7 +2,7 @@ import Home from "./pages/Home";
 import { PopupContextProvider } from "./providers/PopupContextProvider";
 import { BrowserView, MobileView, isBrowser, isMobile, isAndroid } from 'react-device-detect';
 import HomeMobile from "./pages/HomeMobile";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Navbar from "./components/Navbar";
 import Eligibility from "./components/Eligibility";
 import NFTLevels from "./components/NFTLevels";
@@ -13,6 +13,16 @@ function App() {
 	const urlParams = new URLSearchParams(window.location.search);
 	const forceDesktop = urlParams.get('force-desktop');
 	const [modalInfo, setModalInfo] = useState({ type: '', text: '', link: '', visible: false });
+
+	useEffect(() => {
+		const hash = window.location.hash;
+		if (hash) {
+			const element = document.getElementById(hash.substring(1));
+			if (element) {
+				element.scrollIntoView({ behavior: 'smooth' });
+			}
+		}
+	}, []);
 
 	return (
 		<PopupContextProvider>
