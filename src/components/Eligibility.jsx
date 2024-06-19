@@ -2,7 +2,7 @@ import React from 'react';
 
 const Eligibility = () => {
 	return (
-		<div className="bg-black text-white pt-20 pb-30 px-4 text-center pb-section-bottom">
+		<div id="eligibility" className="bg-black text-white pt-20 pb-30 px-4 text-center pb-section-bottom">
 			<div style={{maxWidth: "480px"}} className="mx-auto">
 				<h2 className="text-title font-bold mb-12">Eligibility</h2>
 				<p>To be eligible, you must be either a solo staker or a RocketPool node operator on either of the snapshot dates below:</p>
